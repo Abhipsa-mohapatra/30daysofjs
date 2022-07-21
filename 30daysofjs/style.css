@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1140px;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+h1,
+h2,
+button {
+  margin: 15px 0;
+}
+button {
+  padding: 10px 15px;
+  background-color: rgb(65, 119, 218);
+  color: white;
+  border: none;
+  box-shadow: 0 0 2px 0 grey;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: rgb(26, 98, 233);
+  border: 0 0 10px 0 rgb(91, 91, 229);
+}
