@@ -82,6 +82,11 @@ randomnum = Math.random() * 299;
 console.log(randomnum);
 console.log(Math.floor(randomnum)); //q-9
 
+let js = "JavaScript";
+console.log(js);
+console.log(js.length);
+console.log(js.charAt(Math.floor(Math.random() * 10))); //q-10
+
 console.log("1\t1\t1\t1\t1");
 console.log("2\t1\t2\t4\t8");
 console.log("3\t1\t3\t9\t27");
