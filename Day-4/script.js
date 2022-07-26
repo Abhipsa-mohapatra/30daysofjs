@@ -107,6 +107,7 @@ if (
 // how to add leap year
 month = prompt("enter month");
 let year = prompt("enter year");
+let leapyear = year % 4;
 if (
   month == "january" ||
   month == "JANUARY" ||
@@ -120,8 +121,15 @@ if (
   console.log(`${month} ${year} has 31 days`);
 } else if (month == "february") {
   console.log(`${month} ${year} has 28 days`);
-} else if (month == "february" && year == year / 400) {
+} else if (month == "february" && leapyear == 0) {
   console.log(`${month} ${year} has 29 days`);
-} else {
+} else if (
+  month == "april" ||
+  month == "june" ||
+  month == "september" ||
+  month == "november"
+) {
   console.log(`${month} ${year} has 30 days`);
+} else {
+  console.log("invalid");
 }
