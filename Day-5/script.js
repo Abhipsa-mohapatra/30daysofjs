@@ -60,9 +60,9 @@ itCompanies[0] = "FACEBOOK"; //Q-11
 itCompanies[1] = "GOOGLE";
 itCompanies[2] = "MICROSOFT";
 itCompanies[3] = "APPLE";
-itCompanies[4] = " IBM";
+itCompanies[4] = "IBM";
 itCompanies[5] = "ORACLE";
-itCompanies[6] = " AMAZON";
+itCompanies[6] = "AMAZON";
 console.log(itCompanies);
 
 let sentence =
@@ -71,9 +71,37 @@ console.log(sentence.split(" "));
 
 console.log(itCompanies.join()); //q-12
 
-let index = itCompanies.indexOf("Goggle");
-if (index === 1) {
-  console.log("This  does not exist in the array");
+let index = itCompanies.indexOf("IBM"); //Q-13
+console.log(index);
+if (index === -1) {
+  console.log(`company does not exist in the array`);
 } else {
-  console.log("This fruit does exist in the array");
+  console.log(itCompanies);
 }
+
+console.log(itCompanies.sort()); //q-15
+
+console.log(itCompanies.reverse()); //q-16
+
+// Slice out the first 3 companies from the array q=17
+console.log(itCompanies.slice(3, 7));
+
+//18 Slice out the last 3 companies from the array
+console.log(itCompanies.slice(0, 4));
+
+//19 Slice out the middle IT company or companies from the array
+console.log(itCompanies.slice(2, 5));
+
+//20 Remove the first IT company from the array
+console.log(itCompanies.shift());
+
+//21 Remove the middle IT company or companies from the array
+const farr = itCompanies.slice(0, 2);
+const larr = itCompanies.slice(5, 7);
+console.log(farr.concat(larr));
+
+//22 Remove the last IT company from the array
+console.log(itCompanies.pop());
+
+//23 Remove all IT companies
+console.log(itCompanies.splice());

@@ -157,8 +157,8 @@ console.log(
 );
 
 let birthyear = prompt("enter birthyear");
-now = new Date();
-let age = now.getFullYear() - birthyear;
+const now1 = new Date();
+let age = now1.getFullYear() - birthyear;
 console.log(age);
 
 console.log(
@@ -176,3 +176,23 @@ console.log(seconds);
 console.log(`You lived ${seconds} seconds.`);
 // Enter number of years you live: 100
 // You lived 3153600000 seconds.
+
+const today = new Date();
+const year = today.getFullYear(); // return year
+const month = today.getMonth() + 1; // return month(0 - 11)
+const date = today.getDate(); // return date (1 - 31)
+const hourS = today.getHours(); // return number (0 - 23)
+const minute = today.getMinutes(); // return number (0 -59)
+
+console.log(`${date}-${month}-${year} ${hourS}:${minute}`); //28-7-2022 18:2
+console.log(`${date}-${month}-${year} ${hourS}:${minute}`); //28-7-2022 18:4
+console.log(`${date}/${month}/${year} ${hourS}:${minute}`); // 28/7/2022 17:58
+
+const today1 = new Date();
+const year1 = today1.getFullYear();
+const month1 = today1.getMonth() + 1;
+const date1 = today1.getDate();
+const hourS1 = (today1.getHours() < 10 ? "0" : "") + today1.getHours();
+const minute1 = (today1.getMinutes() < 10 ? "0" : "") + today1.getMinutes();
+
+console.log(`${date1}-${month1}-${year1} ${hourS1}:${minute1}`);
