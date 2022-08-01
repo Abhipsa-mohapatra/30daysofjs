@@ -85,6 +85,21 @@ console.log(countries.slice(0, 10));
 midindex = Math.floor(countries.length / 2);
 
 console.log(midindex);
-console.log(countries[(midindex - 1, midindex)]);
+console.log(countries.slice(midindex - 1, midindex + 1));
 
 // Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
+midindex = Math.floor(countries.length / 2);
+console.log(midindex);
+let arr1 = countries.slice(0, midindex);
+let arr2 = countries.slice(midindex, countries.length + 1);
+console.log(arr1);
+console.log(arr2);
+
+if (arr1.length === arr2.length) {
+  countries1 = [[arr1], [arr2]];
+  console.log(countries1);
+} else {
+  arr1.push("India");
+  countries1 = [[arr1], [arr2]];
+  console.log(countries1);
+}
