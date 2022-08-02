@@ -48,6 +48,12 @@ console.log(itCompanies[6]); //q-9
 lastindex = itCompanies.length - 1;
 console.log(itCompanies[lastindex]); //q-9
 
+let array1 = ["momo", "abhipsa", "abhisek", "arati", "prasanta", "anshu"];
+x = array1.toString();
+Array = x.toUpperCase();
+arr1 = Array.split(",");
+console.log(arr1); //a- ['MOMO', 'ABHIPSA', 'ABHISEK', 'ARATI', 'PRASANTA', 'ANSHU']
+
 console.log(itCompanies[0]); //q-10
 console.log(itCompanies[1]);
 console.log(itCompanies[2]);

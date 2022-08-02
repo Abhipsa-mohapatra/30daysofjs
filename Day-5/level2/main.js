@@ -17,8 +17,7 @@ const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
 console.log(shoppingCart);
 console.log(shoppingCart.unshift("Meat"));
 console.log(shoppingCart.push("Sugar"));
-
-console.log(shoppingCart);
+console.log(shoppingCart); //[("Meat", "Milk", "Coffee", "Tea", "Honey", "Sugar")];
 
 console.log(shoppingCart.splice(4, 1));
 console.log(shoppingCart);
