@@ -32,8 +32,7 @@ console.log(`#${result}`);
 var r = Math.floor(Math.random() * 256);
 var g = Math.floor(Math.random() * 256);
 var b = Math.floor(Math.random() * 256);
-var rbgColor = "rgb(" + r + "," + g + "," + b + ")";
-console.log(rbgColor);
+console.log(`rgb(${r},${g},${b})`);
 
 //q-4
 const countries = [
@@ -63,6 +62,15 @@ for (const country of countries) {
 }
 
 console.log(newArr);
+
+// doesnt repeat the same length
+let a = [];
+for (i = 0; i < countries.length; i++) {
+  if (a.indexOf(countries[i].length) === -1) {
+    a.push(countries[i].length);
+  }
+}
+console.log(a);
 
 //q-6
 newArr = [];

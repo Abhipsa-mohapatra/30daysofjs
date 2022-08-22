@@ -96,9 +96,9 @@ console.log(area);
 // let number = prompt("Enter number", "number goes here");
 // console.log(number);
 
-let a = prompt("Enter a", "a goes here");
-let b = prompt("Enter b", "b goes here");
-let c = prompt("Enter c", "c goes here");
+let a = Number(prompt("Enter a", "a goes here"));
+let b = Number(prompt("Enter b", "b goes here"));
+let c = Number(prompt("Enter c", "c goes here"));
 let perimeter = a + b + c;
 console.log(perimeter);
 

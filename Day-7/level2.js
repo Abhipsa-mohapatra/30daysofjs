@@ -123,20 +123,20 @@ function sumOfEven() {
 }
 console.log(sumOfEven()); //a-2550
 
-//q-13  evensAndOdds
-// function evensAndOdds() {
-//   let even = 0;
-//   let odd = 0;
-//   for (let i = 0; i <= 100; i++) {
-//     if (i % 2 == 0) {
-//       even++;
-//     } else {
-//       odd++;
-//     }
-//   }
-//   return even, odd;
-// }
-// console.log(evensAndOdds(even, odd));
+// q-13  evensAndOdds
+function evensAndOdds() {
+  let even = 0;
+  let odd = 0;
+  for (let i = 0; i <= 100; i++) {
+    if (i % 2 == 0) {
+      even++;
+    } else {
+      odd++;
+    }
+  }
+  return `the number of odds are: ${odd} \n the number of even are :${even}`;
+}
+console.log(evensAndOdds());
 
 //2-14
 
@@ -150,4 +150,14 @@ function sumOfnum(num) {
 console.log(sumOfnum([1, 2, 3]));
 console.log(sumOfnum([1, 2, 3, 4]));
 
-//q-15
+//q-15 Writ a function which generates a randomUserIp.
+randomUserIp = () => {
+  let one = Math.floor(Math.random() * 255) + 1;
+  let two = Math.floor(Math.random() * 255);
+  let three = Math.floor(Math.random() * 255);
+  let four = Math.floor(Math.random() * 255);
+  return `IP: ${one}:${two}:${three}:${four}`;
+};
+randomUserIp();
+
+

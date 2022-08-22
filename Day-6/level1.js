@@ -39,13 +39,19 @@ for (let i = 0; i <= n; i++) {
 }
 
 //q-4
-var x, y, chr;
-for (x = 1; x <= 8; x++) {
-  for (y = 1; y < x; y++) {
-    chr = chr + "#";
+for (i = 1; i <= 8; i++) {
+  let pattern = "";
+  for (j = 1; j < i; j++) {
+    pattern += "#"; // a += i print 2 33 444 etc  a += j print 1 12 123 1234 etc
   }
-  console.log(chr);
-  chr = "";
+  console.log(pattern);
+}
+for (i = 8; i >= 1; i--) {
+  let revpattern = "";
+  for (j = 1; j < i; j++) {
+    revpattern += "#";
+  }
+  console.log(revpattern);
 }
 
 //q-5
@@ -117,8 +123,8 @@ console.log([even, odd]);
 
 //q-13 Develop a small script which generate array of 5 random numbers
 let arr = [];
-for (let i = 0, t = 5; i < t; i++) {
-  arr.push(Math.round(Math.random() * t));
+for (let i = 0; i < 5; i++) {
+  arr.push(Math.floor(Math.random() * 10));
 }
 console.log(arr);
 
@@ -129,6 +135,15 @@ while (arr.length < 5) {
   if (arr.indexOf(r) === -1) arr.push(r);
 }
 console.log(arr);
+
+let uniqueRN = [];
+for (let i = 0; i < 5; i++) {
+  let r = Math.floor(Math.random() * 10);
+  if (uniqueRN.indexOf(r) === -1) {
+    uniqueRN.push(r);
+  }
+}
+console.log(uniqueRN);
 
 //q-15
 let characters = "abcdefghijklmnopqrstuvwxyz0123456789";
