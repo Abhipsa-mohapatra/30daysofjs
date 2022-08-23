@@ -43,5 +43,5 @@ Countries.sort((a, b) => {
 Countries.map((Country) => {
   console.log(Country);
 });
-let populatedCountries = Country.slice(0, 10);
-console.log(populatedCountries);
+// let populatedCountries = Country.slice(0, 10);
+// console.log(populatedCountries);
